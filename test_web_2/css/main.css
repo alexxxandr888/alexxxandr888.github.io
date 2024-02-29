@@ -1,5 +1,5 @@
-@font-face {font-family: Poppins-Medium; src: url("/fonts/Poppins-Medium.ttf");}
-@font-face {font-family: Shrikhand; src: url("/fonts/Shrikhand-Regular.ttf");}
+@font-face {font-family: Poppins; src: url("./fonts/Poppins-Medium.ttf");}
+@font-face {font-family: Shrikhand; src: url("./fonts/Shrikhand-Regular.ttf");}
 
 body {
 	background-color: rgb(250, 228, 202);
