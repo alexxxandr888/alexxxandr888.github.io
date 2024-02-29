@@ -44,10 +44,11 @@ body {
 .logo-1 {
 	display: inline-block;
     position: absolute;
-    margin-top: 29px;
+    margin-top: 4vw;
+    margin-bottom: 10px;
     margin-left: 44vw;
     width: 20%;
-    height: 548px;
+    height: 79%;
 }
 
 .logo-1 img {
