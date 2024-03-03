@@ -1,0 +1,372 @@
+@font-face{font-family: "SegoeWP Bold"; src: url(../fonts/SegoeWP-Bold.ttf);}
+@font-face{font-family: "SegoeWP-Light"; src: url(../fonts/SegoeWP-Light.ttf);}
+@font-face{font-family: "SegoeWP-Semibold"; src: url(../fonts/SegoeWP-Semibold.ttf);}
+@font-face{font-family: "SegoeWP-SemiLight"; src: url(../fonts/SegoeWP-SemiLight.ttf);}
+
+@media (max-width: 365px){
+	body {
+		width: 365px;
+	}
+}
+
+body {
+	background-color: rgb(236, 236, 236);
+}
+
+/*Секция 1*/
+.section-1 {
+	position: relative;
+	background-color: #ffffff;
+	z-index: 10;
+	width: 100%;
+	box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.40);
+}
+
+.header {height: 68px;}
+
+@media (max-width: 337px){
+	.header {
+		height: 68px;
+	}
+	.text-header {
+		margin-left: 12%;
+		height: 9vw;
+		margin-top: 5%;
+	}
+	.text-header-one {
+		margin-top: 10px;
+		height: 50px
+	}
+}
+
+@media (max-width: 449px){
+	.text-header strong {
+		font-size: 34px;
+    	position: absolute;
+	}
+	.text-header span {
+		font-size: 34px;
+    	position: absolute;
+    	margin-left: 84px;
+	}
+}
+
+.text-header {margin-left: 19px;}
+.text-header-one {margin-top: 11px;}
+
+.text-header strong {
+	font-family: SegoeWP-Semibold, sans-serif;
+	font-size: 36px;
+	color: rgb(18, 152, 221);
+}
+
+.text-header span {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	font-size: 36px;
+	color: rgb(141, 141, 141);
+}
+
+.links {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	padding-top: 11px;
+}
+
+.links a {
+	font-size: 20px;
+	text-decoration: none;
+	color: rgba(103, 103, 103, 0.9);
+	font-weight: 600;
+	padding: 0px 25px;
+}
+
+.links a:hover {}
+.links a:active {}
+.links a:focus {}
+
+.links button {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgb(55, 178, 248), rgb(32, 134, 232));
+	font-size: 20px;
+	border-radius: 5px;
+	width: 150px;
+	height: 45px;
+	border: 2px solid rgb(23, 132, 209);
+}
+
+.links button:hover, .links button:focus {
+	background: linear-gradient(rgb(0, 138, 248), rgb(0, 104, 232));
+}
+
+/*Секция 2*/
+
+.background-1 {
+	position: absolute;
+	z-index: -1;
+	top: 68px;
+	width: 100%;
+	height: 534px;
+	background-image: url("/img/background.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+@media (max-width: 365px){
+	.background-1 {
+		width: 365px;
+	}
+}
+
+.text-1 {
+	margin-top: 120px;
+	line-height: 1.5;
+}
+
+.text-1 strong {
+	font-family: SegoeWP-Semibold, sans-serif;
+	text-transform: uppercase;
+	font-size: 52px;
+	color: #ffffff;
+}
+
+.text-1 p {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	text-transform: uppercase;
+	font-size: 48px;
+	color: #ffffff;
+}
+
+@media (max-width: 1000px){.text-1 strong {font-size: 38px;}}
+@media (max-width: 1000px){.text-1 p {font-size: 34px;}}
+@media (max-width: 1000px){.text-1 {margin-top: 8%;}}
+@media (max-width: 683px){.text-1 strong {font-size: 4.5vw;}}
+@media (max-width: 683px){.text-1 p {font-size: 4.5vw;}}
+@media (max-width: 365px){.text-1 strong {font-size: 20px;}}
+@media (max-width: 365px){.text-1 p {font-size: 16px;}}
+
+
+
+.btns {
+	z-index: 1;
+	font-family: SegoeWP Bold, sans-serif;
+	font-size: 30px;
+	margin-top: 35px;
+	width: 280px;
+	height: 60px;
+	box-shadow: 0 0px 2px 7px rgba(0, 0, 0, 0.25);
+	background: linear-gradient(rgb(109, 210, 88), rgb(54, 175, 36));
+	color: white;
+	border-radius: 6px;
+	border: none;
+}
+
+.btns:hover {background: linear-gradient(rgb(1, 210, 88), rgb(54, 175, 36));}
+
+.btns:active {
+	background: linear-gradient(rgb(1, 210, 88), rgb(54, 175, 36));
+	font-size: 29px;
+	width: 270px;
+	height: 60px;
+	box-shadow: 0 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1000px){.btns {width: 280px; height: 60px;}}
+
+@media (max-width: 683px){
+	.btns {
+		width: 145px;
+    	height: 32px;
+    	font-size: 15px;
+    	margin-top: 10px;
+    	padding-top: 4px;
+    	box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.25);
+	}
+}
+
+@media (max-width: 683px){
+	.btns:active {
+		width: 142px;
+    	height: 32px;
+		font-size: 14px;
+		margin-top: 10px;
+		padding-top: 4px;
+		box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+	}
+}
+
+@media (max-width: 365px){
+	.btns {
+		width: 145px;
+    	height: 32px;
+    	font-size: 15px;
+    	margin-top: 10px;
+    	padding-top: 4px;
+    	box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.25);
+	}
+}
+
+@media (max-width: 365px){
+	.btns:active {
+		width: 142px;
+    	height: 32px;
+		font-size: 14px;
+		margin-top: 10px;
+		padding-top: 4px;
+		box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+	}
+}
+
+@media (max-width: 991.60px){.links {display: none;}}
+
+.dropdown {
+	display: none;
+}
+
+@media (max-width: 991.50px){
+
+.dropbtn {
+	position: relative;
+    margin-top: 12px;
+    background-color: #3498DB;
+    color: white;
+    padding: 9px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 105px;
+    height: 42px;
+    background: linear-gradient(rgb(55, 178, 248), rgb(32, 134, 232));
+    border-radius: 5px;
+    border: 2px solid rgb(23, 132, 209);
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background: linear-gradient(rgb(0, 138, 248), rgb(0, 104, 232));
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.dropdown-content {
+	font-family: SegoeWP-Semibold, sans-serif;
+    display: none;
+    position: absolute;
+    text-align: center;
+    min-width: 105px;
+    z-index: 1;
+    margin-top: 12px;
+}
+
+.dropdown-content a {
+    color: rgb(255 255 255);
+    padding: 12px 16px;
+    margin: 20px 0px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 0px 2px 8px 3px rgba(0,0,0,0.2);
+    background: linear-gradient(rgb(55, 178, 248), rgb(32, 134, 232));
+    border: 2px solid rgb(23, 132, 209);
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+	background: linear-gradient(rgb(0, 138, 248), rgb(0, 104, 232));
+}
+
+.show {display:block;}
+}
+
+.photos {
+	background-color: rgb(255, 255, 255);
+	border-radius: 6px;
+	box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.2);
+	border-bottom: 8px solid rgb(81, 192, 61);
+	margin-top: 80px;
+}
+
+.text-ram {
+	margin-top: 0px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+
+.photos span {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	color: rgb(134, 134, 134);
+	font-size: 16px;
+	padding-top: 1px;
+}
+
+.photos p {
+	font-family: SegoeWP-SemiLight, sans-serif;
+    color: rgb(134, 134, 134);
+    font-size: 22px;
+    padding-top: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.photo {
+	display: inline-block;
+	padding: 12px;
+	height: 120px;
+}
+
+.photo span{
+	display: block;
+	text-align: center;
+}
+
+.part-three {
+	margin-top: 20px;
+}
+
+.text-down {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	line-height: 1.5;
+	color: rgb(134, 134, 134);
+
+}
+
+.text-down span {
+	display: block;
+	font-size: 26px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+.text-down p {
+	display: block;
+	font-size: 22px;
+	margin-top: 4px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/*Секция 3*/
+
+.section-3 {
+	margin-top: 45px;
+}
+
+.down-image {
+	font-family: SegoeWP-SemiLight, sans-serif;
+	font-size: 20px;
+	color: rgb(134, 134, 134);
+	display: inline-block;
+	margin: 0px 50px;
+	margin-bottom: 68px;
+}
+
+.down-image span {
+	display: block;
+	margin-top: 20px;
+}
+
+
+
