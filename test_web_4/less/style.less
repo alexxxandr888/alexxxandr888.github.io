@@ -1,0 +1,332 @@
+// Шрифты
+@font-face {
+	font-family: "MadimiOne-Regular";
+	src: url(../fonts/MadimiOne-Regular.ttf) format("truetype");
+}
+
+// Отступы
+header, footer, section {
+	padding: 80px 0;
+}
+
+header {
+	padding: 200px 0;
+	box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.30);
+}
+
+footer {
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+// Задний фон
+header, footer {
+	background: url(../img/pattern.png), rgb(63,94,251);
+	background: url(../img/pattern.png), -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	background: url(../img/pattern.png), -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	background: url(../img/pattern.png), radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	filter: url(../img/pattern.png), progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
+}
+
+// (Секция-1)
+// Настройка текста
+.text-header {
+	font-family: MadimiOne-Regular, sans-serif;
+	text-shadow: 0 0 6px rgba(252,70,107,0.8);
+}
+
+// Настройка кнопки Плей
+.itd-play {
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 50px auto;
+	transition: all 0.2s ease;
+	&:hover {
+		background: radial-gradient(circle, darken(rgba(63,94,251,1), 6%) 0%, rgba(252,70,107,1) 100%);
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.itd-triangle {
+	margin-right: -3px;
+	width: 0;
+	height: 0;
+	border: solid;
+	border-width: 10px 0 10px 15px;
+	border-color: transparent transparent transparent #fff;
+}
+
+// Настройка кнопки Заказать
+.btn-itd {
+	font-family: MadimiOne-Regular, sans-serif;
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	padding: 8px 30px;
+	color: #fff;
+	background: rgb(252,70,107);
+	&:hover {
+		background: rgba(63,94,251,1);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+	}
+	&:hover:active {
+		background: darken(rgba(63,94,251,1), 5%);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+		border: 1px solid darken(rgba(63,94,251,1), 5%);
+	}
+	&:focus {
+		background: rgba(63,94,251,1);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+		border: 1px solid rgba(63,94,251,1);
+	}
+}
+
+// Настройка видео
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+	& iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.modal-txt {
+	font-family: MadimiOne-Regular, sans-serif;
+}
+
+// Информация
+.about {
+	& i {
+		font-size: 30px;
+		color: #170052;
+	}
+	& h5 {
+		color: #170052;
+	}
+}
+
+.itd-circle {
+	margin: 0 auto 15px;
+	width: 80px;
+	height: 80px;
+	border: 3px solid #170052;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ab-1 {
+	font-family: MadimiOne-Regular, sans-serif;
+	color: #170052;
+	margin-bottom: 50px;
+}
+
+.text-about {
+	font-family: MadimiOne-Regular, sans-serif;
+}
+
+.line {
+	width: 100px;
+	height: 2.5px;
+	background-color: #170052;
+	margin: 15px auto 50px;
+}
+
+// Секция 2
+.forwhom {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 5px 6px rgba(0, 0, 0, 0.25);
+}
+
+.forwhom-text {
+	font-family: MadimiOne-Regular, sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+	padding: 50px;
+	border: 2.5px solid #170052;
+	color: #170052;
+}
+
+.btn-itd-two {
+	font-family: MadimiOne-Regular, sans-serif;
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding: 8px 30px;
+	color: #fff;
+	background: rgb(252,70,107);
+	&:hover {
+		background: rgba(63,94,251,1.0);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+	}
+	&:hover:active {
+		background: darken(rgba(63,94,251,1), 5%);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+		border: 1px solid darken(rgba(63,94,251,1), 5%);
+	}
+	&:focus {
+		background: rgba(63,94,251,1);
+		color: #fff;
+		box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+		border: 1px solid rgba(63,94,251,1);
+	}
+}
+
+// Секция 3
+.ab-2 {
+	font-family: MadimiOne-Regular, sans-serif;
+	color: #170052;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+// Акордион
+.accordion-button {
+	font-family: MadimiOne-Regular, sans-serif;
+	font-size: 15px;
+	color: #170052;
+}
+
+.accordion-button:not(.collapsed) {
+	color: #fff;
+    background-color: #170052;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: none;
+	color: #000;
+}
+
+// Секция 4
+.author {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 5px 6px rgba(0, 0, 0, 0.25);
+	padding-bottom: 0;
+}
+
+.author-text {
+	& h4 {
+		font-family: MadimiOne-Regular, sans-serif;
+		font-size: 30px;
+		color: #170052;
+	}
+	& p {
+		font-weight: 600;
+	}
+}
+
+.itd_img {
+	max-width: 250px;
+}
+
+// Секция 5
+.ab-3 {
+	font-family: MadimiOne-Regular, sans-serif;
+	color: #170052;
+	margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+	.ab-3 {
+		margin-bottom: 0;
+	}
+}
+
+.reviews-img {
+	border-radius: 50%;
+	padding: 1px 1px;
+	border: 4px solid #170052;
+}
+
+@media (max-width: 992px) {
+	.reviews-img {
+		margin-top: 50px;
+	}
+}
+
+.line_two {
+	width: 100px;
+	height: 3px;
+	background-color: #170052;
+	margin: 20px auto 50px;
+}
+
+// Секция 6
+.buy {
+	background-color: #f5f5f5;
+	box-shadow: 0 2px 5px 6px rgba(0, 0, 0, 0.25);
+}
+
+.itd_img_2 {
+	max-width: 400px;
+}
+
+@media (max-width: 576px) {
+	.itd_img_2 {
+		max-width: 250px;
+	}
+}
+
+.author-text ul{
+	font-weight: 600;
+}
+
+.advantages_ul {
+	list-style: disc;
+    list-style-position: inside;
+    margin-top: 30px;
+	& li {
+		padding: 10px 0;
+		color: #fc466b;
+		& span {
+			color: #000;
+		}
+	}
+}
+
+// Секция 7
+footer {
+	padding: 20px 0;
+	& .btn {
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		padding: 0;
+		padding-top: 7px;
+		margin: 0 5px;
+	}
+	& i {
+
+	}
+}
+
+@media (max-width: 280px) {
+	* {
+		overflow-x: scroll;
+	}
+}
